@@ -1,38 +1,62 @@
+/* App.css */
 .App {
   text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 30px;
+  color: #6c5b7b; /* Color púrpura pastel */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: #355c7d; /* Azul pastel */
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #6c5b7b; /* Cambio de color al pasar el ratón */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.selected-person {
+  margin-top: 20px;
+}
+
+.streaming-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.streaming-buttons a {
+  width: 100px; /* Ancho fijo para todos los botones */
+  height: 55px; /* Altura predeterminada para computadoras */
+}
+
+@media only screen and (max-width: 600px) {
+  .streaming-buttons a {
+    height: 47px; /* Altura para dispositivos móviles */
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.streaming-buttons a img {
+  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes al ancho del botón */
+  max-height: 100%; /* Ajusta el tamaño máximo de las imágenes al alto del botón */
+}
+
+footer {
+  margin-top: 40px;
+  font-style: italic;
+  color: #6c5b7b; /* Color púrpura pastel */
+}
+
+footer span {
+  color: #ff6b6b; /* Color pastel del corazón */
 }
