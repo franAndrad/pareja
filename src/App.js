@@ -14,6 +14,12 @@ function App() {
 
   return (
     <div className="App">
+      <div className="girasol">
+        <span role="img" aria-label="girasol" style={{ fontSize: "90px" }}>
+          🌻
+        </span>
+        <p className="estilo" >Feliz otoño, tu flor amarilla corazón !!!</p>
+      </div>
       <h1>¿Quién elige la película?</h1>
       <button onClick={handleRandomSelect}>Seleccionar aleatoriamente</button>
       {selectedPerson && (

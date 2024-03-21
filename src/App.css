@@ -51,6 +51,27 @@ button:hover {
   max-height: 100%; /* Ajusta el tamaño máximo de las imágenes al alto del botón */
 }
 
+.estilo{
+  margin-top: 40px;
+  font-style: italic;
+  color: #6c5b7b; /* Color púrpura pastel */
+}
+
+.girasol {
+  background-color: #eeddb5;
+  border-radius: 10px;
+  padding: 20px; /* Ajusta el espacio interno */
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .girasol {
+    margin: auto; /* Ajusta el margen para dispositivos móviles */
+    width: 80%;
+  }
+}
+
 footer {
   margin-top: 40px;
   font-style: italic;
